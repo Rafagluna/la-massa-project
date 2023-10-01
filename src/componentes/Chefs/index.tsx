@@ -1,6 +1,6 @@
-// import CardImageChef1 from "../../assets/CardImageChef1.svg";
-// import CardImageChef2 from "../../assets/CardImageChef2.svg";
-// import CardImageChef3 from "../../assets/CardImageChef3.svg";
+import CardImageChef1 from "../../assets/CardImageChef1.svg";
+import CardImageChef2 from "../../assets/CardImageChef2.svg";
+import CardImageChef3 from "../../assets/CardImageChef3.svg";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 
@@ -33,39 +33,11 @@ function Chefs() {
       slidesToSlide: 1 // optional, default to 1.
     }
   };
-  const sliderImageUrl = [
-    //First image url
-    {
-      url:
-        "https://i2.wp.com/www.geeksaresexy.net/wp-content/uploads/2020/04/movie1.jpg?resize=600%2C892&ssl=1"
-    },
-    {
-      url:
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-kids-movies-2020-call-of-the-wild-1579042974.jpg?crop=0.9760858955588091xw:1xh;center,top&resize=480:*"
-    },
-    //Second image url
-    {
-      url:
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-for-kids-2020-sonic-the-hedgehog-1571173983.jpg?crop=0.9871668311944719xw:1xh;center,top&resize=480:*"
-    },
-    //Third image url
-    {
-      url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS82ET2bq9oTNwPOL8gqyoLoLfeqJJJWJmKQ&usqp=CAU"
-    },
-  
-    //Fourth image url
-  
-    {
-      url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdvuww0JDC7nFRxiFL6yFiAxRJgM-1tvJTxA&usqp=CAU"
-    }
-  ];
   return (
     <>
       <S.ContainerRestaurantUnit>
         <S.TitleRestaurantUnit>Nossos Chef's</S.TitleRestaurantUnit>
-        {/* <Carousel
+        <Carousel
         responsive={responsive}
         autoPlay={true}
         swipeable={true}
@@ -134,35 +106,7 @@ function Chefs() {
               <S.IconFacebook />
             </S.ContentSocialProfileChef>
           </S.CardChefProfile>
-        </Carousel> */}
-
-<div className="parent">
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        showDots={true}
-        infinite={true}
-        partialVisible={false}
-        dotListClass="custom-dot-list-style"
-      >
-        {/* {sliderImageUrl.map((imageUrl, index) => {
-          return (
-            <div className="slider" key={index}>
-              <img src={imageUrl.url} alt="movie" />
-            </div>
-          );
-        })} */}
-        <div>Item'1</div>
-        <div>Item'1</div>
-        <div>Item'1</div>
-        <div>Item'1</div>
-        <div>Item'1</div>
-        <div>Item'1</div>
-        <div>Item'1</div>
-      </Carousel>
-    </div>
+        </Carousel>
       </S.ContainerRestaurantUnit>
     </>
   );
