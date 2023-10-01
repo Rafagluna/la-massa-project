@@ -76,9 +76,9 @@ export const CardService = styled.div`
   }
 `;
 
-export const ContentIcon = styled.img`
-  width: 80px;
-  height: 80px;
+export const ContentIcon = styled.span`
+  width: 80px !important;
+  height: 80px !important;
   color: #ffbb88;
   padding-left: 10px;
 `;
