@@ -20,23 +20,22 @@ export const ContainerHeader = styled.header<OptionsHeader>`
     justify-content: space-around;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 850px) {
     height: 65px;
   }
 `;
 
 export const ContentHeader = styled.div`
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   padding-top: 15px;
 
   @media (min-width: 850px) {
     padding-top: 0;
+    align-items: center;
   }
 `;
-
-export const ContentTitle = styled.div``;
 
 export const Title = styled.span`
   color: #fff;
@@ -48,11 +47,11 @@ export const Title = styled.span`
   padding-left: 30px;
 
   @media (max-width: 480px) {
-    font-size: 24px;
+    font-size: 26px;
     width: 70%;
   }
 
-  @media (min-width: 481px) and (min-width: 849px) {
+  @media (min-width: 481px) and (max-width: 849px) {
     font-size: 28px;
     width: 75%;
   }
@@ -63,12 +62,10 @@ export const MenuHamburger = styled(Menu)`
   padding-right: 30px;
   cursor: pointer;
   width: 25%;
-  padding-top: 12px;
 
   @media (max-width: 4800px) {
     width: 25px;
     height: 25px;
-    padding-top: 8px;
   }
 `;
 

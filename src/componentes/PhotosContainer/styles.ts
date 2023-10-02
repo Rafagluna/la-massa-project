@@ -31,7 +31,7 @@ export const GridContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     max-width: 100%;
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1080px) {
       width: 70rem;
     }
 
@@ -43,8 +43,8 @@ export const GridContainer = styled.div`
   li {
     width: 90vw;
 
-    @media (min-width: 460px) {
-      width: 90vw;
+    @media (min-width: 560px) {
+      width: 100%;
     }
   }
 
