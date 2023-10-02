@@ -1,6 +1,8 @@
-import { styled } from "styled-components";
-import { theme } from "../styles/theme";
-import { Menu } from "../Icons";
+import { styled } from 'styled-components';
+import { theme } from '../styles/theme';
+import { Menu } from '../Icons';
+
+import { Link } from 'react-scroll';
 
 interface OptionsHeader {
   showOptions?: boolean;
@@ -42,7 +44,6 @@ export const Title = styled.span`
   font-weight: 700;
   line-height: normal;
   padding-left: 30px;
-  padding-bottom: 10px;
 
   @media (max-width: 300px) {
     font-size: 24px;
@@ -60,10 +61,10 @@ export const MenuHamburger = styled(Menu)`
   }
 `;
 
-export const OptionHeader = styled.li<OptionsHeader>`
+export const OptionHeader = styled(Link)<OptionsHeader>`
   color: #fff;
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   padding: 2px;
   font-weight: 500;
@@ -71,6 +72,7 @@ export const OptionHeader = styled.li<OptionsHeader>`
   cursor: pointer;
   text-decoration: none;
   list-style-type: none;
+  text-decoration: none;
 
   &:hover {
     font-weight: 700;
@@ -119,5 +121,5 @@ export const ContentHeaderOptions = styled.ul`
 `;
 
 export const ContentOption = styled.div<OptionsHeader>`
-  border-bottom: ${({ active }) => (active ? "2px solid #ffbb88" : "none")};
+  border-bottom: ${({ active }) => (active ? '2px solid #ffbb88' : 'none')};
 `;

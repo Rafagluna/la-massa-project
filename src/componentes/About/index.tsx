@@ -1,10 +1,10 @@
-import * as S from "./styles";
-import YoutubeRestaurant from "../../assets/YoutubeRestaurant.svg";
+import * as S from './styles';
+import YoutubeRestaurant from '../../assets/YoutubeRestaurant.svg';
 
 function About() {
   return (
     <>
-      <S.ContainerAbout>
+      <S.ContainerAbout id="about">
         <S.ContentAbout>
           <S.ContentImage src={YoutubeRestaurant} alt="YoutubeRestaurant" />
           <S.ContentAboutTitle>

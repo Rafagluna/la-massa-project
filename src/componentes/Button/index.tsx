@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from './styles';
 
 function Banner(props: { title: string }) {
   return (

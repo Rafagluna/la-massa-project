@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from './styles';
 
 function RestaurantUnit() {
   interface IRestaurantUnit {
@@ -9,24 +9,24 @@ function RestaurantUnit() {
 
   const dataRestaurantUnits: IRestaurantUnit[] = [
     {
-      total: "42",
-      storeCountries: "Lojas no Brasil",
+      total: '42',
+      storeCountries: 'Lojas no Brasil',
       id: 0,
     },
     {
-      total: "27",
-      storeCountries: "Lojas no EUA",
-      
+      total: '27',
+      storeCountries: 'Lojas no EUA',
+
       id: 0,
     },
     {
-      total: "19",
-      storeCountries: "Lojas no México",
+      total: '19',
+      storeCountries: 'Lojas no México',
       id: 0,
     },
     {
-      total: "12",
-      storeCountries: "Lojas no Chile",
+      total: '12',
+      storeCountries: 'Lojas no Chile',
       id: 0,
     },
   ];

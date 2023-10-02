@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerAbout = styled.div`
   width: 100vw;
@@ -187,7 +187,7 @@ export const ButtonSend = styled.button`
 
 export const TitleButtonSend = styled.span`
   color: #202020;
-  font-family: "Mirza";
+  font-family: 'Mirza';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;

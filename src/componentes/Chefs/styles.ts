@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import * as I from "../Icons";
+import styled from 'styled-components';
+import * as I from '../Icons';
 
-// interface iCarousel {
-//   toHide: boolean;
-// }
+interface ICarousel {
+  toHide: boolean;
+}
 
 export const ContainerRestaurantUnit = styled.div`
   width: 100vw;
@@ -21,27 +21,27 @@ export const ContainerRestaurantUnit = styled.div`
   }
 
   .slider {
-  margin:0 20px;
-  overflow:"hidden";
-  padding:2rem 0;
-}
+    margin: 0 20px;
+    overflow: 'hidden';
+    padding: 2rem 0;
+  }
 
-.slider img {
-  width: 100%;
-  border-radius:10px;
-}
+  .slider img {
+    width: 100%;
+    border-radius: 10px;
+  }
 
-.react-multi-carousel-list {
-padding: 0rem 0 2rem 0;
-}
+  .react-multi-carousel-list {
+    padding: 0rem 0 2rem 0;
+  }
 
-.custom-dot-list-style button{
-border: none;
-background: rgb(255, 68, 68);
-}
-.react-multi-carousel-dot.react-multi-carousel-dot--active button{
-background: rgb(255, 68, 68) !important;
-}
+  .custom-dot-list-style button {
+    border: none;
+    background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button {
+    background: rgb(255, 68, 68) !important;
+  }
 
   @media (max-width: 1026px) {
     height: auto;
@@ -72,34 +72,32 @@ export const TitleRestaurantUnit = styled.span`
   }
 `;
 
-// export const ContentCarousel = styled(Carousel)<iCarousel>`
-//   width: 70vw;
+export const ContentCarousel = styled.div<ICarousel>`
+  width: 70vw;
 
-//   .rec.rec-arrow {
-//     background-color: #ffbb88;
-//     color: #1d1d1d;
+  li.react-multi-carousel-item.react-multi-carousel-item--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-//     display: ${({ toHide }) => (toHide && "none" )};
-//   }
+  .rec .rec-arrow {
+    background-color: #ffbb88;
+    color: #1d1d1d;
 
-//   /* .sc-jdHHBG.dgawip.rec.rec-pagination {
-//     display: none;
-//   } */
+    display: ${({ toHide }) => toHide && 'none'};
+  }
 
-//   button.sc-ckdFFX.ftzIWL.rec.rec-dot.rec.rec-dot_active {
-//     background-color: #ffbb88;
-//     box-shadow: none !important;
-//   }
+  button.sc-ckdFFX.ftzIWL.rec.rec-dot.rec.rec-dot_active {
+    background-color: #ffbb88;
+    color: #1d1d1d;
+    box-shadow: none;
+  }
 
-//   .rec-carousel-item:focus {
-//     outline: none;
-//     box-shadow: inset 0 0 1px 1px yellow;
-//   }
-
-//   @media (max-width: 450px) {    
-//     width: 90vw;
-//   }
-// `;
+  @media (max-width: 450px) {
+    width: 90vw;
+  }
+`;
 
 export const CardChefProfile = styled.div`
   width: 255px;

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 function Header() {
   interface IOption {
@@ -14,33 +14,33 @@ function Header() {
 
   const dataOptionsHeader: IOption[] = [
     {
-      option: "HOME",
-      path: "#home",
+      option: 'HOME',
+      path: '',
       id: 0,
     },
     {
-      option: "SOBRE",
-      path: "#sobre",
+      option: 'SOBRE',
+      path: 'about',
       id: 1,
     },
     {
-      option: "SERVIÇOS",
-      path: "#servicos",
+      option: 'SERVIÇOS',
+      path: 'services',
       id: 2,
     },
     {
-      option: "EQUIPE",
-      path: "#equipe",
+      option: 'EQUIPE',
+      path: 'team',
       id: 3,
     },
     {
-      option: "DEPOIMENTOS",
-      path: "#depoimentos",
+      option: 'DEPOIMENTOS',
+      path: 'depositions',
       id: 4,
     },
     {
-      option: "CONTATO",
-      path: "#contato",
+      option: 'CONTATO',
+      path: 'contact',
       id: 5,
     },
   ];
@@ -50,44 +50,52 @@ function Header() {
         <S.ContentHeader>
           <S.Title>LA MASSA</S.Title>
           {window.innerWidth <= 850 && (
-          <S.MenuHamburger onClick={() => setShowOptions(!showOptions)} />
+            <S.MenuHamburger onClick={() => setShowOptions(!showOptions)} />
           )}
         </S.ContentHeader>
         {window.innerWidth <= 850 ? (
           <>
-        {(showOptions || window.innerWidth >= 850) && (
-          <>
-            <S.ContentHeaderOptionsMobile>
-              {dataOptionsHeader.map(({ option }, index) => (
-                <>
-                <S.ContentOption 
-                    active={optionId === index}>
-                  <S.OptionHeader
-                    key={index}
-                    onClick={() => setOptionId(index)}
-                  >
-                    {option}
-                  </S.OptionHeader>
-                  </S.ContentOption>
-                </>
-              ))}
-            </S.ContentHeaderOptionsMobile>
+            {(showOptions || window.innerWidth >= 850) && (
+              <>
+                <S.ContentHeaderOptionsMobile>
+                  {dataOptionsHeader.map(({ path, option }, index) => (
+                    <>
+                      <S.ContentOption active={optionId === index}>
+                        <S.OptionHeader
+                          activeClass="active"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          to={path}
+                          key={index}
+                          onClick={() => setOptionId(index)}
+                        >
+                          {option}
+                        </S.OptionHeader>
+                      </S.ContentOption>
+                    </>
+                  ))}
+                </S.ContentHeaderOptionsMobile>
+              </>
+            )}
           </>
-        )}
-        </>
         ) : (
           <>
             <S.ContentHeaderOptions>
-              {dataOptionsHeader.map(({ option }, index) => (
+              {dataOptionsHeader.map(({ path, option }, index) => (
                 <>
-                <S.ContentOption 
-                    active={optionId === index}>
-                  <S.OptionHeader
-                    key={index}
-                    onClick={() => setOptionId(index)}
-                  >
-                    {option}
-                  </S.OptionHeader>
+                  <S.ContentOption active={optionId === index}>
+                    <S.OptionHeader
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      to={path}
+                      key={index}
+                      onClick={() => setOptionId(index)}
+                    >
+                      {option}
+                    </S.OptionHeader>
                   </S.ContentOption>
                 </>
               ))}

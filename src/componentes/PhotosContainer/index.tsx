@@ -1,10 +1,10 @@
-import * as S from "./styles";
-import Photo1 from "../../assets/Photo 1.svg";
-import Photo2 from "../../assets/Photo 2.svg";
-import Photo3 from "../../assets/Photo 3.svg";
-import Photo4 from "../../assets/Photo 4.svg";
-import Photo5 from "../../assets/Photo 5.svg";
-import Photo6 from "../../assets/Photo 6.svg";
+import * as S from './styles';
+import Photo1 from '../../assets/Photo 1.svg';
+import Photo2 from '../../assets/Photo 2.svg';
+import Photo3 from '../../assets/Photo 3.svg';
+import Photo4 from '../../assets/Photo 4.svg';
+import Photo5 from '../../assets/Photo 5.svg';
+import Photo6 from '../../assets/Photo 6.svg';
 
 function Banner() {
   return (

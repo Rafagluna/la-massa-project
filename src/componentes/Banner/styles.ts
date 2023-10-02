@@ -1,10 +1,11 @@
-import styled from "styled-components";
-import BannerRestaurant from "../../assets/BannerRestaurant.png";
+import styled from 'styled-components';
+import BannerRestaurant from '../../assets/BannerRestaurant.png';
 
 export const ContainerBanner = styled.div`
   width: 100vw;
   height: 55vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BannerRestaurant});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${BannerRestaurant});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +17,7 @@ export const ContainerBanner = styled.div`
 
   @media (min-width: 901px) {
     height: 80vh;
-  padding-left: 0;
+    padding-left: 0;
   }
 `;
 

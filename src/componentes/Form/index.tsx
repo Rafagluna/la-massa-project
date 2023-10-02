@@ -1,10 +1,10 @@
-import * as S from "./styles";
-import FormImage from "../../assets/FormImage.svg";
+import * as S from './styles';
+import FormImage from '../../assets/FormImage.svg';
 
 function About() {
   return (
     <>
-      <S.ContainerAbout>
+      <S.ContainerAbout id="contact">
         <S.TitleService>Contato</S.TitleService>
         <S.ContentAbout>
           {window.innerWidth >= 880 && (
@@ -12,8 +12,18 @@ function About() {
           )}
           <S.ContentAboutTitle>
             <S.Input type="text" name="name" id="name" placeholder="Nome" />
-            <S.Input type="tel" name="phone" id="phone" placeholder="Telefone" />
-            <S.Input type="email" name="email" id="email" placeholder="E-mail" />
+            <S.Input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Telefone"
+            />
+            <S.Input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
             <S.TextArea placeholder="Mensagem" />
             <S.ButtonSend>
               <S.TitleButtonSend>Enviar</S.TitleButtonSend>

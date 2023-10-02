@@ -1,16 +1,14 @@
-import styled from "styled-components";
-import BGTestimonials from "../../assets/BGTestimonials.svg";
+import styled from 'styled-components';
+import BGTestimonials from '../../assets/BGTestimonials.svg';
 
 export const ContainerBanner = styled.div`
   width: 100vw;
   height: auto;
-  background: linear-gradient(
-      0deg,
-      rgba(32, 32, 32, 0.7) 0%,
-      rgba(32, 32, 32, 0.7) 100%
-    ),
+  background:
+    linear-gradient(0deg, rgba(32, 32, 32, 0.7) 0%, rgba(32, 32, 32, 0.7) 100%),
     linear-gradient(180deg, #202020 0%, #202020 0%, rgba(32, 32, 32, 0) 23.44%),
-    url(${BGTestimonials}), lightgray 50%;
+    url(${BGTestimonials}),
+    lightgray 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

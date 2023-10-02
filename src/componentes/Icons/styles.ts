@@ -2,7 +2,13 @@ import { theme } from '../styles/theme';
 import styled, { css } from 'styled-components';
 
 export type IconSizes = 'extrasmall' | 'small' | 'medium' | 'large';
-export type IconColor = 'black' | 'white' | 'inherit' | 'blue' | 'disabled' | 'red';
+export type IconColor =
+  | 'black'
+  | 'white'
+  | 'inherit'
+  | 'blue'
+  | 'disabled'
+  | 'red';
 
 const colors: Record<IconColor, string> = {
   black: theme.colors.black,
@@ -18,7 +24,6 @@ const getColor = (color: IconColor, disabled: boolean) => {
 };
 
 export interface IconProps {
-  size?: IconSizes;
   color?: IconColor;
   disabled?: boolean;
   $isButton?: boolean;
@@ -30,6 +35,7 @@ export const Icon = styled.svg<IconProps>`
     color: ${getColor(color, disabled)};
     fill: ${getColor(color, disabled)};
     cursor: ${$isButton ? 'pointer' : 'auto'};
+    width: 100%;
 
     path {
       fill: ${getColor(color, disabled)};

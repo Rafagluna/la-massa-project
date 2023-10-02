@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const GridContainer = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ export const GridContainer = styled.div`
   }
 
   figure::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,7 +82,9 @@ export const GridContainer = styled.div`
     font-size: 1.2rem;
     z-index: 1;
     opacity: 0;
-    transition: opacity 600ms, transform 600ms;
+    transition:
+      opacity 600ms,
+      transform 600ms;
   }
 
   a:is(:hover, :focus) figure::after {
@@ -113,7 +115,9 @@ export const GridContainer = styled.div`
     a:is(:hover, :focus) figcaption {
       opacity: 1;
       transform: translate3d(0, 0, 0);
-      transition: opacity 600ms 400ms, transform 600ms 400ms;
+      transition:
+        opacity 600ms 400ms,
+        transform 600ms 400ms;
     }
 
     a:is(:hover, :focus) img {

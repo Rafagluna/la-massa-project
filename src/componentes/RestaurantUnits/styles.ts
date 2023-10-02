@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerRestaurantUnit = styled.div`
   width: 100vw;
   min-height: 20vh;
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   @media (max-width: 1026px) {
     height: auto;

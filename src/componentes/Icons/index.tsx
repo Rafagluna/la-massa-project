@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from './styles';
 
 export const Menu = (props: S.IconProps) => (
   <S.Icon
@@ -29,11 +29,7 @@ export const Fish = (props: S.IconProps) => (
 );
 
 export const Pasta = (props: S.IconProps) => (
-  <S.Icon
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+  <S.Icon fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <g id="Icon">
       <g id="Group">
         <path
