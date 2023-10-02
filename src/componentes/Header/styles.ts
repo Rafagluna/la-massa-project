@@ -20,7 +20,7 @@ export const ContainerHeader = styled.header<OptionsHeader>`
     justify-content: space-around;
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 480px) {
     height: 65px;
   }
 `;
@@ -36,6 +36,8 @@ export const ContentHeader = styled.div`
   }
 `;
 
+export const ContentTitle = styled.div``;
+
 export const Title = styled.span`
   color: #fff;
   font-family: ${theme.font.Mirza};
@@ -45,8 +47,14 @@ export const Title = styled.span`
   line-height: normal;
   padding-left: 30px;
 
-  @media (max-width: 300px) {
+  @media (max-width: 480px) {
     font-size: 24px;
+    width: 70%;
+  }
+
+  @media (min-width: 481px) and (min-width: 849px) {
+    font-size: 28px;
+    width: 75%;
   }
 `;
 
@@ -54,8 +62,10 @@ export const MenuHamburger = styled(Menu)`
   color: #ffffff;
   padding-right: 30px;
   cursor: pointer;
+  width: 25%;
+  padding-top: 12px;
 
-  @media (max-width: 300px) {
+  @media (max-width: 4800px) {
     width: 25px;
     height: 25px;
     padding-top: 8px;

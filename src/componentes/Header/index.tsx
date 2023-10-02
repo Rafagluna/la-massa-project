@@ -48,7 +48,9 @@ function Header() {
     <>
       <S.ContainerHeader showOptions={showOptions}>
         <S.ContentHeader>
-          <S.Title>LA MASSA</S.Title>
+          <S.ContentTitle>
+            <S.Title>LA MASSA</S.Title>
+          </S.ContentTitle>
           {window.innerWidth <= 850 && (
             <S.MenuHamburger onClick={() => setShowOptions(!showOptions)} />
           )}

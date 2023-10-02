@@ -8,17 +8,18 @@ export const GridContainer = styled.div`
   padding-top: 64px;
   padding-bottom: 64px;
   height: auto;
+  padding-left: 8px;
 
   img {
-    width: 80%;
+    width: 100%;
     display: block;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     transition: transform 1000ms;
 
-    @media (min-width: 460px) {
+    /* @media (min-width: 460px) {
       width: 100%;
-    }
+    } */
   }
 
   ul {
@@ -35,7 +36,7 @@ export const GridContainer = styled.div`
     }
 
     @media (max-width: 560px) {
-      padding-left: 65px;
+      padding-left: 0;
     }
   }
 
@@ -43,7 +44,7 @@ export const GridContainer = styled.div`
     width: 90vw;
 
     @media (min-width: 460px) {
-      width: 100%;
+      width: 90vw;
     }
   }
 
@@ -51,6 +52,20 @@ export const GridContainer = styled.div`
     margin: 0;
     position: relative;
     overflow: hidden;
+  }
+
+  figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
   }
 
   figcaption {
@@ -69,30 +84,42 @@ export const GridContainer = styled.div`
     z-index: 1;
     opacity: 0;
     transition:
-      opacity 600ms,
-      transform 600ms;
+      opacity 300ms,
+      transform 300ms;
+
+    @media (min-width: 460px) {
+      width: 90vw;
+    }
+  }
+
+  a:is(:hover, :focus) figure::after {
+    opacity: 1;
+
+    @media (min-width: 460px) {
+      width: 90vw;
+    }
   }
 
   a:is(:hover, :focus) figcaption {
     opacity: 1;
-    transition: opacity 600ms;
+    transition: opacity 300ms;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  /* @media (prefers-reduced-motion: no-preference) {
     figcaption {
       transform: translate3d(0, 2rem, 0);
     }
 
-    /* figure::after {
+    figure::after {
       border-radius: 50%;
       opacity: 1;
       transform: scale(0);
-      transition: transform 900ms;
+      transition: transform 600ms;
     }
 
     a:is(:hover, :focus) figure::after {
       transform: scale(2.5);
-    } */
+    }
 
     a:is(:hover, :focus) figcaption {
       opacity: 1;
@@ -105,5 +132,5 @@ export const GridContainer = styled.div`
     a:is(:hover, :focus) img {
       transform: scale(1.2);
     }
-  }
+  } */
 `;

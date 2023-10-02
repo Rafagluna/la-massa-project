@@ -88,7 +88,7 @@ export const ContentCarousel = styled.div<ICarousel>`
     display: ${({ toHide }) => toHide && 'none'};
   }
 
-  button.sc-ckdFFX.ftzIWL.rec.rec-dot.rec.rec-dot_active {
+  .rec.rec-dot.rec.rec-dot_active {
     background-color: #ffbb88;
     color: #1d1d1d;
     box-shadow: none;
