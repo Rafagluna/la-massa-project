@@ -49,11 +49,13 @@ export const Title = styled.span`
   @media (max-width: 480px) {
     font-size: 26px;
     width: 70%;
+    padding-top: 3px;
   }
 
   @media (min-width: 481px) and (max-width: 849px) {
     font-size: 28px;
     width: 75%;
+    padding-top: 3px;
   }
 `;
 
