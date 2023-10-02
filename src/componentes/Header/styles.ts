@@ -21,7 +21,7 @@ export const ContainerHeader = styled.header<OptionsHeader>`
   }
 
   @media (max-width: 850px) {
-    height: 65px;
+    height: 58px;
   }
 `;
 
@@ -29,7 +29,7 @@ export const ContentHeader = styled.div`
   display: flex;
   align-items: end;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 12px;
 
   @media (min-width: 850px) {
     padding-top: 0;
