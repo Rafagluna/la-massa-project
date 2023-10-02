@@ -35,7 +35,7 @@ export const GridContainer = styled.div`
     }
 
     @media (max-width: 560px) {
-      padding-left: 55px;
+      padding-left: 65px;
     }
   }
 
@@ -51,20 +51,6 @@ export const GridContainer = styled.div`
     margin: 0;
     position: relative;
     overflow: hidden;
-  }
-
-  figure::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(0, 0, 0, 0.5);
-    transform-origin: center;
-    opacity: 0;
-    transform: scale(2);
-    transition: opacity 300ms;
   }
 
   figcaption {
@@ -87,10 +73,6 @@ export const GridContainer = styled.div`
       transform 600ms;
   }
 
-  a:is(:hover, :focus) figure::after {
-    opacity: 1;
-  }
-
   a:is(:hover, :focus) figcaption {
     opacity: 1;
     transition: opacity 600ms;
@@ -101,7 +83,7 @@ export const GridContainer = styled.div`
       transform: translate3d(0, 2rem, 0);
     }
 
-    figure::after {
+    /* figure::after {
       border-radius: 50%;
       opacity: 1;
       transform: scale(0);
@@ -110,7 +92,7 @@ export const GridContainer = styled.div`
 
     a:is(:hover, :focus) figure::after {
       transform: scale(2.5);
-    }
+    } */
 
     a:is(:hover, :focus) figcaption {
       opacity: 1;
