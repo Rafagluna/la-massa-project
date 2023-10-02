@@ -35,7 +35,7 @@ export const GridContainer = styled.div`
     }
 
     @media (max-width: 560px) {
-      padding-left: 0;
+      padding-left: 55px;
     }
   }
 

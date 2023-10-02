@@ -58,6 +58,7 @@ export const MenuHamburger = styled(Menu)`
   @media (max-width: 300px) {
     width: 25px;
     height: 25px;
+    padding-top: 8px;
   }
 `;
 

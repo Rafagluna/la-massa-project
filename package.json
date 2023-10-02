@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@itseasy21/react-elastic-carousel": "^0.12.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-elastic-carousel": "^0.11.5",
     "react-multi-carousel": "^2.8.4",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0",

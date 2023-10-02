@@ -1,7 +1,7 @@
 import CardImageChef1 from '../../assets/CardImageChef1.svg';
 import CardImageChef2 from '../../assets/CardImageChef2.svg';
 import CardImageChef3 from '../../assets/CardImageChef3.svg';
-import Carousel from 'react-elastic-carousel';
+import Carousel from '@itseasy21/react-elastic-carousel';
 
 import * as S from './styles';
 
@@ -21,7 +21,7 @@ function Chefs() {
         <S.ContentCarousel
           toHide={window.innerWidth <= 530 || window.innerWidth > 850}
         >
-          <Carousel breakPoints={breakPoints}>
+          <Carousel breakPoints={breakPoints} isRTL={false}>
             <S.CardChefProfile>
               <S.ContentImageProfile>
                 <img src={CardImageChef1} alt="" />
@@ -81,26 +81,6 @@ function Chefs() {
                 <S.IconFacebook />
               </S.ContentSocialProfileChef>
             </S.CardChefProfile>
-            {/* <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div> */}
-            {/* </Carousel> */}
-            {/* </Swiper> */}
           </Carousel>
         </S.ContentCarousel>
       </S.ContainerRestaurantUnit>
